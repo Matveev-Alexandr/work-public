@@ -1,0 +1,157 @@
+/* Позиции */
+
+main {
+    border: 1px solid black;
+    background: rgb(215,255,255);
+    width: 800px;
+    height: 600px;
+}
+
+.text-major {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.img-type-famous {
+    margin-left: 15px;
+    position: relative;
+}
+
+.text-description {
+    position: absolute;
+    top: 520px;
+    left: 10px;
+    width: 750px;
+}
+
+.fieldA {
+    position: absolute;
+    left: 220px;
+    top: 425px;
+}
+
+.fieldB {
+    position: absolute;
+    top: 170px;
+}
+
+.fielda {
+    position: absolute;
+    left: 250px;
+    top: 373px;
+}
+
+.fieldb {
+    position: absolute;
+    left: 95px;
+    top: 190px;
+}
+
+.fielde {
+    position: absolute;
+    left: 145px;
+    top: 353px;
+}
+
+.fieldf {
+    position: absolute;
+    left: 68px;
+    top: 220px;
+}
+
+.fieldh {
+    position: absolute;
+    left: 590px;
+    top: 255px;
+}
+
+.fieldH {
+    position: absolute;
+    left: 585px;
+    top: 323px;
+}
+
+.fieldr {
+    position: absolute;
+    left: 545px;
+    top: 400px;
+}
+
+.fieldA1 {
+    position: absolute;
+    left: 160px;
+    top: 153px;
+}
+
+.fieldA2 {
+    position: absolute;
+    left: 450px;
+    top: 153px;
+}
+
+.fieldA3 {
+    position: absolute;
+    left: 714px;
+    top: 260px;
+}
+
+.fieldA4 {
+    position: absolute;
+    left: 300px;
+    top: 295px;
+}
+
+.fieldA41 {
+    position: absolute;
+    left: 200px;
+    top: 270px;
+}
+
+.fieldA12 {
+    position: absolute;
+    left: 222px;
+    top: 35px;
+}
+
+.fieldA23 {
+    position: absolute;
+    left: 730px;
+    top: 165px;
+}
+
+.fieldA34 {
+    position: absolute;
+    left: 465px;
+    top: 325px;
+}
+
+/* Текст */
+.fieldAComplet {
+    border: 2px solid black;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    position: absolute;
+    top: 485px;
+    left: 300px;
+}
+
+.textGreen {
+    background-color: #60d360;
+}
+
+.textRed {
+    background-color: #d75454;
+}
+
+.fieldBut1 {
+    position: absolute;
+    top: 467px;
+    left: 365px;
+}
