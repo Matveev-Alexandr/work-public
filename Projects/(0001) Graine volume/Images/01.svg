@@ -10,7 +10,7 @@ viewBox="0 0 7342.08 4351.69"
     .str3 {stroke:red;stroke-width:16;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
     .str2 {stroke:black;stroke-width:8;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
     .str0 {stroke:#7F66CC;stroke-width:8;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
-    .str1 {stroke:#ADADAD;stroke-width:8;stroke-linejoin:bevel;stroke-miterlimit:22.9256;stroke-dasharray:152.393773 152.393773}
+    .str1 {stroke:#ADADAD;stroke-width:8;stroke-linejoin:bevel;stroke-miterlimit:22.9256;stroke-dasharray:50 50}
     .fil0 {fill:none}
    ]]>
   </style>
