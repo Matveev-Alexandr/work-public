@@ -38,7 +38,8 @@ main {
 
 .fieldB {
     position: absolute;
-    top: 170px;
+    top: 160px;
+    left: 3px;
 }
 
 .fielda {
