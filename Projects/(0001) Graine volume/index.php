@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Расчёт геометрических параметров приёмных объёмов">
+    <meta name="keywords" content="Зернообработка, элеватор, зерноприёмка, зернохранение, завальная яма, бункер">
+    <meta name="author" content="Alexandr Matveev">
+    <title>Геометрия бункера или ямы</title>
     <link href="normalize.css" rel="stylesheet">
-    <title>Расчёт геометрии ямы</title>
     <link href="styles.css" rel="stylesheet">
     <?php
 
@@ -66,7 +69,7 @@
 </head>
 <body>
 <main>
-    <p class="text-major"><u>Конус объёма завальной ямы</u></p>
+    <p class="text-major"><u>Конус объёма приёмного бункера или ямы</u></p>
     <img class="img-type-famous" src="./Images/01.svg" alt="Don't load" width="720">
     <form action="" method="get">
         <?php foreach ($arrayName[0] as $key => $item): ?>
@@ -77,15 +80,18 @@
             </div>
         <?php endforeach; ?>
         <?php foreach ($arrayAngle as $item): ?>
-            <p class="fieldA<?= $item ?>">&#945<sub><?= $item ?></sub>=<?= $total['A' . $item] ?></p>
+            <?php if (!empty($total['A' . $item])): ?>
+                <p class="fieldA<?= $item ?>">&#945<sub><?= $item ?></sub>=<?= $total['A' . $item] ?>&#176</p>
+            <?php endif; ?>
         <?php endforeach; ?>
-        <p class="text-description"><u>Параметры объёма будут:</u><br>V=<?= str_replace('.', ',', $total['V']) ?> м<sup>3</sup>
-            или Vт=<?= $total['Vt'] ?> т при плотности <?= str_replace('.', ',', $_GET['sizer']) ?> т/м<sup>3</sup>
-            (каждый 0,1 м размера "h" добавляет A&#xD7;B=<?= str_replace('.', ',', $total['ABm']) ?> м<sup>3</sup>
-            объёма или A&#xD7;B=<?= $total['ABt'] ?> т)</p>
         <button class="fieldBut1">Расчитать</button>
         <?php if (empty(!$total['V'])): ?>
             <p class="fieldAComplet textGreen">РАСЧЁТ ВЫПОЛНЕН</p>
+            <p class="text-description"><u>Параметры объёма будут:</u><br>V=<?= str_replace('.', ',', $total['V']) ?>
+                м<sup>3</sup>
+                или Vт=<?= $total['Vt'] ?> т при плотности <?= str_replace('.', ',', $_GET['sizer']) ?> т/м<sup>3</sup>
+                (каждый 0,1 м размера "h" добавляет A&#xD7;B=<?= str_replace('.', ',', $total['ABm']) ?> м<sup>3</sup>
+                объёма или A&#xD7;B=<?= $total['ABt'] ?> т)</p>
         <?php else: ?>
             <p class="fieldAComplet textRed">РАСЧЁТ НЕ ВЫПОЛНЕН ИЛИ ДАННЫЕ НЕ ВЕРНЫ</p>
         <?php endif; ?>

@@ -5,6 +5,7 @@ main {
     background: rgb(215,255,255);
     width: 800px;
     height: 600px;
+    border-radius: 10px;
 }
 
 .text-major {
@@ -38,7 +39,8 @@ main {
 
 .fieldB {
     position: absolute;
-    top: 170px;
+    top: 160px;
+    left: 10px;
 }
 
 .fielda {
@@ -85,7 +87,7 @@ main {
 
 .fieldA1 {
     position: absolute;
-    left: 160px;
+    left: 150px;
     top: 153px;
 }
 
@@ -103,7 +105,7 @@ main {
 
 .fieldA4 {
     position: absolute;
-    left: 300px;
+    left: 295px;
     top: 295px;
 }
 
@@ -115,7 +117,7 @@ main {
 
 .fieldA12 {
     position: absolute;
-    left: 222px;
+    left: 220px;
     top: 35px;
 }
 
@@ -140,6 +142,7 @@ main {
     position: absolute;
     top: 485px;
     left: 300px;
+    border-radius: 5px;
 }
 
 .textGreen {
