@@ -4,7 +4,7 @@ main {
     border: 1px solid black;
     background: rgb(215,255,255);
     width: 800px;
-    height: 600px;
+    height: 580px;
     border-radius: 10px;
 }
 
@@ -21,7 +21,38 @@ main {
 
 .img-type-famous {
     margin-left: 15px;
+    margin-top: 8px;
     position: relative;
+}
+
+.text-result {
+    border: 1px dashed black;
+    background: rgb(153,255,255);
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: 490px;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.text-result-value {
+    border: 1px solid black;
+    background: rgb(255,133,224);
+    width: fit-content;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    padding: 2px;
+    font-size: 120%;
+}
+
+.text-result-value-after {
+    font-size: 70%;
 }
 
 .text-description {
@@ -34,49 +65,49 @@ main {
 .fieldA {
     position: absolute;
     left: 220px;
-    top: 425px;
+    top: 431px;
 }
 
 .fieldB {
     position: absolute;
-    top: 160px;
+    top: 168px;
     left: 10px;
 }
 
 .fielda {
     position: absolute;
     left: 250px;
-    top: 373px;
+    top: 381px;
 }
 
 .fieldb {
     position: absolute;
     left: 95px;
-    top: 190px;
+    top: 198px;
 }
 
 .fielde {
     position: absolute;
     left: 145px;
-    top: 353px;
+    top: 361px;
 }
 
 .fieldf {
     position: absolute;
     left: 68px;
-    top: 220px;
+    top: 228px;
 }
 
 .fieldh {
     position: absolute;
     left: 590px;
-    top: 255px;
+    top: 263px;
 }
 
 .fieldH {
     position: absolute;
     left: 585px;
-    top: 323px;
+    top: 331px;
 }
 
 .fieldr {
@@ -88,49 +119,49 @@ main {
 .fieldA1 {
     position: absolute;
     left: 150px;
-    top: 153px;
+    top: 161px;
 }
 
 .fieldA2 {
     position: absolute;
     left: 450px;
-    top: 153px;
+    top: 161px;
 }
 
 .fieldA3 {
     position: absolute;
     left: 714px;
-    top: 260px;
+    top: 268px;
 }
 
 .fieldA4 {
     position: absolute;
     left: 295px;
-    top: 295px;
+    top: 303px;
 }
 
 .fieldA41 {
     position: absolute;
     left: 200px;
-    top: 270px;
+    top: 278px;
 }
 
 .fieldA12 {
     position: absolute;
     left: 220px;
-    top: 35px;
+    top: 43px;
 }
 
 .fieldA23 {
     position: absolute;
     left: 730px;
-    top: 165px;
+    top: 173px;
 }
 
 .fieldA34 {
     position: absolute;
     left: 465px;
-    top: 325px;
+    top: 333px;
 }
 
 /* Текст */
@@ -140,7 +171,7 @@ main {
     width: 200px;
     font-size: 14px;
     position: absolute;
-    top: 485px;
+    top: 493px;
     left: 300px;
     border-radius: 5px;
 }
@@ -155,6 +186,6 @@ main {
 
 .fieldBut1 {
     position: absolute;
-    top: 467px;
+    top: 475px;
     left: 365px;
 }

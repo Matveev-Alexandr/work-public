@@ -18,6 +18,7 @@
     $arrayAngle = ['1', '2', '3', '4', '41', '12', '23', '34'];
 
     // Валидация данных
+    $total = false;
     foreach ($_GET as $item) {
         if (is_numeric($item) && $item >= 0) {
             $total = true;
@@ -70,7 +71,7 @@
 <body>
 <main>
     <p class="text-major"><u>Конус объёма приёмного бункера или ямы</u></p>
-    <img class="img-type-famous" src="./Images/01.svg" alt="Don't load" width="720">
+    <img class="img-type-famous" src="./images/01.svg" alt="Don't load" width="720">
     <form action="" method="get">
         <?php foreach ($arrayName[0] as $key => $item): ?>
             <div class="field<?= $item ?>">
@@ -87,11 +88,16 @@
         <button class="fieldBut1">Расчитать</button>
         <?php if (empty(!$total['V'])): ?>
             <p class="fieldAComplet textGreen">РАСЧЁТ ВЫПОЛНЕН</p>
-            <p class="text-description"><u>Параметры объёма будут:</u><br>V=<?= str_replace('.', ',', $total['V']) ?>
-                м<sup>3</sup>
-                или Vт=<?= $total['Vt'] ?> т при плотности <?= str_replace('.', ',', $_GET['sizer']) ?> т/м<sup>3</sup>
-                (каждый 0,1 м размера "h" добавляет A&#xD7;B=<?= str_replace('.', ',', $total['ABm']) ?> м<sup>3</sup>
-                объёма или A&#xD7;B=<?= $total['ABt'] ?> т)</p>
+            <div class="text-result">
+                <u>Объём будет:</u><br>
+                <div class="text-result-value">
+                    V=<?= str_replace('.', ',', $total['V']) ?> м<sup>3</sup> или Vт=<?= $total['Vt'] ?> т
+                </div>
+                <span class="text-result-value-after">при плотности <?= str_replace('.', ',', $_GET['sizer']) ?> т/м<sup>3</sup></span>
+            </div>
+            <p class="text-description"><u>Примечание:</u><br>Каждый 0,1 м размера "h" добавляет
+                A&#xD7;B=<?= str_replace('.', ',', $total['ABm']) ?> м<sup>3</sup>
+                объёма или A&#xD7;B=<?= $total['ABt'] ?> т</p>
         <?php else: ?>
             <p class="fieldAComplet textRed">РАСЧЁТ НЕ ВЫПОЛНЕН ИЛИ ДАННЫЕ НЕ ВЕРНЫ</p>
         <?php endif; ?>
