@@ -1,0 +1,9 @@
+first {
+    position: relative;
+    color: red;
+}
+
+second {
+    position: absolute;
+    top: 100px
+}
