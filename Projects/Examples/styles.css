@@ -12,12 +12,14 @@
     background: yellow;
     width: 60px;
     height: 40px;
+    top: auto;
+    left: auto;
 }
 
 .three {
     position: absolute;
     border: 1px solid black;
-    background: yellow;
+    background: coral;
     width: 60px;
     height: 40px;
 }
