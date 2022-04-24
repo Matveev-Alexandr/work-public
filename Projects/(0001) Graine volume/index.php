@@ -71,6 +71,7 @@
 <body>
 <main>
     <p class="text-major"><u>Конус объёма приёмного бункера или ямы</u></p>
+    <div>
     <img class="img-type-famous" src="./images/01.svg" alt="Don't load" width="720">
     <form action="" method="get">
         <?php foreach ($arrayName[0] as $key => $item): ?>
@@ -102,6 +103,7 @@
             <p class="fieldAComplet textRed">РАСЧЁТ НЕ ВЫПОЛНЕН ИЛИ ДАННЫЕ НЕ ВЕРНЫ</p>
         <?php endif; ?>
     </form>
+    </div>
 </main>
 </body>
 </html>
