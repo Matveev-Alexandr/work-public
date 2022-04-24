@@ -1,0 +1,67 @@
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.box {
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.orange {
+    background: orange;
+}
+
+.darkmagneta {
+    background: darkmagenta;
+}
+
+.skyblue {
+    background: skyblue;
+}
+
+.lawngreen {
+    background: lawngreen;
+}
+
+.orchid {
+    background: orchid;
+}
+
+.crimson {
+    background: crimson;
+}
+
+.position-box-1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
