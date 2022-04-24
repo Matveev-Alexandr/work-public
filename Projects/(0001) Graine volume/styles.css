@@ -19,10 +19,14 @@ main {
     width: fit-content;
 }
 
+.legend {
+    position: relative;
+}
+
 .img-type-famous {
     margin-left: 15px;
     margin-top: 8px;
-    position: relative;
+    position: absolute;
 }
 
 .text-result {
@@ -65,103 +69,103 @@ main {
 .fieldA {
     position: absolute;
     left: 220px;
-    top: 431px;
+    top: 401px;
 }
 
 .fieldB {
     position: absolute;
-    top: 168px;
+    top: 138px;
     left: 10px;
 }
 
 .fielda {
     position: absolute;
     left: 250px;
-    top: 381px;
+    top: 351px;
 }
 
 .fieldb {
     position: absolute;
     left: 95px;
-    top: 198px;
+    top: 168px;
 }
 
 .fielde {
     position: absolute;
     left: 145px;
-    top: 361px;
+    top: 331px;
 }
 
 .fieldf {
     position: absolute;
     left: 68px;
-    top: 228px;
+    top: 198px;
 }
 
 .fieldh {
     position: absolute;
     left: 590px;
-    top: 263px;
+    top: 233px;
 }
 
 .fieldH {
     position: absolute;
     left: 585px;
-    top: 331px;
+    top: 301px;
 }
 
 .fieldr {
     position: absolute;
     left: 545px;
-    top: 400px;
+    top: 370px;
 }
 
 .fieldA1 {
     position: absolute;
     left: 150px;
-    top: 161px;
+    top: 131px;
 }
 
 .fieldA2 {
     position: absolute;
     left: 450px;
-    top: 161px;
+    top: 131px;
 }
 
 .fieldA3 {
     position: absolute;
     left: 714px;
-    top: 268px;
+    top: 238px;
 }
 
 .fieldA4 {
     position: absolute;
     left: 295px;
-    top: 303px;
+    top: 273px;
 }
 
 .fieldA41 {
     position: absolute;
     left: 200px;
-    top: 278px;
+    top: 248px;
 }
 
 .fieldA12 {
     position: absolute;
     left: 220px;
-    top: 43px;
+    top: 13px;
 }
 
 .fieldA23 {
     position: absolute;
     left: 730px;
-    top: 173px;
+    top: 143px;
 }
 
 .fieldA34 {
     position: absolute;
     left: 465px;
-    top: 333px;
+    top: 303px;
 }
 
 /* Текст */

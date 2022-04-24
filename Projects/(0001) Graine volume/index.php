@@ -71,20 +71,22 @@
 <body>
 <main>
     <p class="text-major"><u>Конус объёма приёмного бункера или ямы</u></p>
-    <img class="img-type-famous" src="./images/01.svg" alt="Don't load" width="720">
     <form action="" method="get">
-        <?php foreach ($arrayName[0] as $key => $item): ?>
-            <div class="field<?= $item ?>">
-                <label for="size<?= $item ?>"><?= $arrayName[1][$key] ?></label>
-                <input type="text" size="1" name="size<?= $item ?>" id="size<?= $item ?>"
-                       value="<?= $_GET['size' . $item] ?>">
-            </div>
-        <?php endforeach; ?>
-        <?php foreach ($arrayAngle as $item): ?>
-            <?php if (!empty($total['A' . $item])): ?>
-                <p class="fieldA<?= $item ?>">&#945<sub><?= $item ?></sub>=<?= $total['A' . $item] ?>&#176</p>
-            <?php endif; ?>
-        <?php endforeach; ?>
+        <div class="legend">
+            <img class="img-type-famous" src="./images/01.svg" alt="Don't load" width="720">
+            <?php foreach ($arrayName[0] as $key => $item): ?>
+                <div class="field<?= $item ?>">
+                    <label for="size<?= $item ?>"><?= $arrayName[1][$key] ?></label>
+                    <input type="text" size="1" name="size<?= $item ?>" id="size<?= $item ?>"
+                           value="<?= $_GET['size' . $item] ?>">
+                </div>
+            <?php endforeach; ?>
+            <?php foreach ($arrayAngle as $item): ?>
+                <?php if (!empty($total['A' . $item])): ?>
+                    <p class="fieldA<?= $item ?>">&#945<sub><?= $item ?></sub>=<?= $total['A' . $item] ?>&#176</p>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
         <button class="fieldBut1">Расчитать</button>
         <?php if (empty(!$total['V'])): ?>
             <p class="fieldAComplet textGreen">РАСЧЁТ ВЫПОЛНЕН</p>
