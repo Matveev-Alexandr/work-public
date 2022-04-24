@@ -1,9 +1,23 @@
-first {
+.first {
     position: relative;
-    color: red;
+    border: 1px solid black;
+    background: green;
+    width: 60px;
+    height: 40px;
 }
 
-second {
+.second {
     position: absolute;
-    top: 100px
+    border: 1px solid black;
+    background: yellow;
+    width: 60px;
+    height: 40px;
+}
+
+.three {
+    position: absolute;
+    border: 1px solid black;
+    background: yellow;
+    width: 60px;
+    height: 40px;
 }
