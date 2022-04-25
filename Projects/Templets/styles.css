@@ -14,10 +14,23 @@
     position: sticky;
 }
 
+.box-main {
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    top: 10px;
+    left: 10px;
+}
+
 .box {
+    border: 1px solid black;
     width: 60px;
     height: 40px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .green {
@@ -56,12 +69,13 @@
     background: orchid;
 }
 
-.crimson {
-    background: crimson;
+.cyan {
+    background: cyan;
 }
 
 .position-box-1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
