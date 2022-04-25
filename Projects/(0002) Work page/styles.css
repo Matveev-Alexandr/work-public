@@ -1,13 +1,49 @@
-.font-size-18 {
-    font-size: 18px;
+@font-face {
+    font-family: calibri-bold; /* Имя шрифта */
+    src: url(fonts/calibri-bold.ttf); /* Путь к файлу со шрифтом */
 }
 
-.font-size-14 {
-    font-size: 14px;
+@font-face {
+    font-family: calibri-bold-italic; /* Имя шрифта */
+    src: url(fonts/calibri-bold-italic.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: calibri-italic; /* Имя шрифта */
+    src: url(fonts/calibri-italic.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: calibri-regular; /* Имя шрифта */
+    src: url(fonts/calibri-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+.font-calibri-bold {
+    font-family: calibri-bold;
+}
+
+.font-calibri-bold-italic {
+    font-family: calibri-bold-italic;
+}
+
+.font-calibri-italic {
+    font-family: calibri-italic;
+}
+
+.font-calibri-regular {
+    font-family: calibri-regular;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-16 {
+    font-size: 16px;
 }
 
 .font-size-10 {
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .relative {
@@ -27,25 +63,23 @@
 }
 
 .box-main {
-    border: 1px dashed black;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-    top: 10px;
-    left: 10px;
-    width: 300px;
-    height: 260px;
+    height: fit-content;
 }
 
 .box {
-    border: 1px solid black;
-    width: 60px;
-    height: 40px;
+    border: 1px dashed black;
+    border-radius: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 10px;
+    height: fit-content;
 }
 
 .green {
@@ -88,9 +122,85 @@
     background: cyan;
 }
 
+.darkgrey {
+    background: darkgrey;
+}
+
+.color-1 {
+    background: rgb(225,255,255);;
+}
+
+.color-2 {
+    background: rgb(153,255,255);;
+}
+
+.color-3 {
+    background: rgb(220,220,220);;
+}
+
+.padding-3 {
+    padding: 3px;
+}
+
+.format-1 {
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-bottom: 5px;
+}
+
+.format-2 {
+    margin-left: 8px;
+}
+
+.format-3:nth-child(1) {
+    align-items: center;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
 .position-box-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
+.psevdo-1::before {
+    content: "- ";
+}
+
+.psevdo-i::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(i)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-ipdf::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(ipdf)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-pdf::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(pdf)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
