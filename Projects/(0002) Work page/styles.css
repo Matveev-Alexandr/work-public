@@ -1,0 +1,96 @@
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-10 {
+    font-size: 14px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.box-main {
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 260px;
+}
+
+.box {
+    border: 1px solid black;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.orange {
+    background: orange;
+}
+
+.darkmagneta {
+    background: darkmagenta;
+}
+
+.skyblue {
+    background: skyblue;
+}
+
+.lawngreen {
+    background: lawngreen;
+}
+
+.orchid {
+    background: orchid;
+}
+
+.cyan {
+    background: cyan;
+}
+
+.position-box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
