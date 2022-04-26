@@ -34,12 +34,16 @@
     font-family: calibri-regular;
 }
 
-.font-size-20 {
-    font-size: 20px;
+.font-size-22 {
+    font-size: 22px;
 }
 
-.font-size-16 {
-    font-size: 16px;
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-12 {
+    font-size: 12px;
 }
 
 .font-size-10 {
@@ -79,7 +83,8 @@
     align-items: flex-start;
     padding: 5px;
     margin: 10px;
-    height: fit-content;
+    max-width: 400px;
+    /*height: fit-content;*/
 }
 
 .green {
@@ -152,8 +157,18 @@
     margin-left: 8px;
 }
 
-.format-3:nth-child(1) {
-    align-items: center;
+.format-3 {
+    align-self: center;
+}
+
+.format-4 {
+    margin-left: 10px;
+}
+
+.format-5 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 1.4;
 }
 
 li {
@@ -204,3 +219,68 @@ li {
     padding: 1px;
 }
 
+.psevdo-itxt::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(itxt)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-txt::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(txt)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-fh::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(fh)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-xlsx::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(xlsx)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-jpg::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(jpg)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-ijpg::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(ijpg)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
