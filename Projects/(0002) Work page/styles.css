@@ -1,0 +1,286 @@
+@font-face {
+    font-family: calibri-bold; /* Имя шрифта */
+    src: url(fonts/calibri-bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: calibri-bold-italic; /* Имя шрифта */
+    src: url(fonts/calibri-bold-italic.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: calibri-italic; /* Имя шрифта */
+    src: url(fonts/calibri-italic.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: calibri-regular; /* Имя шрифта */
+    src: url(fonts/calibri-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+.font-calibri-bold {
+    font-family: calibri-bold;
+}
+
+.font-calibri-bold-italic {
+    font-family: calibri-bold-italic;
+}
+
+.font-calibri-italic {
+    font-family: calibri-italic;
+}
+
+.font-calibri-regular {
+    font-family: calibri-regular;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.box-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.box {
+    border: 1px dashed black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 10px;
+    max-width: 400px;
+    /*height: fit-content;*/
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.orange {
+    background: orange;
+}
+
+.darkmagneta {
+    background: darkmagenta;
+}
+
+.skyblue {
+    background: skyblue;
+}
+
+.lawngreen {
+    background: lawngreen;
+}
+
+.orchid {
+    background: orchid;
+}
+
+.cyan {
+    background: cyan;
+}
+
+.darkgrey {
+    background: darkgrey;
+}
+
+.color-1 {
+    background: rgb(225,255,255);;
+}
+
+.color-2 {
+    background: rgb(153,255,255);;
+}
+
+.color-3 {
+    background: rgb(220,220,220);;
+}
+
+.padding-3 {
+    padding: 3px;
+}
+
+.format-1 {
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-bottom: 5px;
+}
+
+.format-2 {
+    margin-left: 8px;
+}
+
+.format-3 {
+    align-self: center;
+}
+
+.format-4 {
+    margin-left: 10px;
+}
+
+.format-5 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.position-box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.psevdo-1::before {
+    content: "- ";
+}
+
+.psevdo-i::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(i)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-ipdf::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(ipdf)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-pdf::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(pdf)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-itxt::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(itxt)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-txt::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(txt)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-fh::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(fh)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-xlsx::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(xlsx)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-jpg::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(jpg)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-ijpg::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(ijpg)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
