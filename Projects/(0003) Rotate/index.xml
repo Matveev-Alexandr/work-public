@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vrobject>
+<!-- Object2VR 2.0.2, object movie configuration -->
+<input width="990" height="700" columns="36" rows="1" states="1" fileextension="jpg" imagepath="images" />
+<control wrapx="1" wrapy="0" revx="0" revy="0" swapxy="0" controller="1" sensitivity="10" lockedmouse="0" lockedkeyboard="0" lockedwheel="0" invertwheel="0" speedwheel="1" dblclickfullscreen="0" automovemode="1" />
+<view>
+<start column="4" row="0" state="0" />
+<zoom min="1" default="1" max="4" centerx="0" centery="0" />
+<viewer background="1" backgroundcolor="0xffffff" imagescaling="1" />
+</view>
+<autorotate speed="20" start="0" delay="1" />
+<display />
+<index.xml author="" datetime="" copyright="" source="" info="" comment="" />
+</vrobject>
