@@ -87,6 +87,10 @@
     /*height: fit-content;*/
 }
 
+.max-width-01 {
+    max-width: 550px;
+}
+
 .green {
     background: green;
 }
@@ -169,6 +173,11 @@
     margin-top: 2px;
     margin-bottom: 2px;
     line-height: 1.4;
+}
+
+.format-6 {
+    text-indent: -10px;
+    margin-left: 10px;
 }
 
 li {
@@ -278,6 +287,50 @@ li {
     font-family: calibri-regular;
     font-size: 12px;
     content: "(ijpg)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-idjvu::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(idjvu)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-djvu::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(djvu)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-ipng::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(ipng)";
+    background: yellow;
+    border: 1px solid rgb(224, 224, 0);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
+.psevdo-png::after {
+    font-family: calibri-regular;
+    font-size: 12px;
+    content: "(png)";
     background: yellow;
     border: 1px solid rgb(224, 224, 0);
     border-radius: 5px;
