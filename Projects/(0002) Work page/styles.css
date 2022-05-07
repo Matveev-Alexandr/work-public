@@ -78,11 +78,11 @@
 .box {
     border: 1px dashed black;
     border-radius: 5px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     max-width: 400px;
     /*height: fit-content;*/
 }
@@ -136,15 +136,15 @@
 }
 
 .color-1 {
-    background: rgb(225,255,255);;
+    background: rgb(240,255,255);;
 }
 
 .color-2 {
-    background: rgb(153,255,255);;
+    background: rgb(224,240,255);;
 }
 
 .color-3 {
-    background: rgb(220,220,220);;
+    background: rgb(214,235,255);;
 }
 
 .padding-3 {
@@ -153,7 +153,7 @@
 
 .format-1 {
     border-radius: 5px;
-    border: 1px solid darkgrey;
+    border: 1px solid rgb(179,218,255);
     margin-bottom: 5px;
 }
 
@@ -191,149 +191,73 @@ li {
     flex-wrap: wrap;
 }
 
+.psevdo-format {
+    font-family: calibri-regular;
+    font-size: 12px;
+    color: rgb(102,102,102);
+    background: rgb(214,235,255);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 1px;
+}
+
 .psevdo-1::before {
     content: "- ";
 }
 
 .psevdo-i::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(i)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-ipdf::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(ipdf)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-pdf::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(pdf)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-itxt::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(itxt)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-txt::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(txt)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-fh::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(fh)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-xlsx::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(xlsx)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-jpg::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(jpg)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-ijpg::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(ijpg)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-idjvu::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(idjvu)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-djvu::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(djvu)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-ipng::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(ipng)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
 }
 
 .psevdo-png::after {
-    font-family: calibri-regular;
-    font-size: 12px;
     content: "(png)";
-    background: yellow;
-    border: 1px solid rgb(224, 224, 0);
-    border-radius: 5px;
-    margin-left: 2px;
-    padding: 1px;
+}
+
+.psevdo-php::after {
+    content: "(php)";
 }
