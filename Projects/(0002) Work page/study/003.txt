@@ -1,0 +1,11 @@
+p /по тэгу/
+.title /по классу/
+p.warning /тэг с классом/
+#promo /по id/
+h1#сhapter1 /тэг с id/
+.title a /тэг внутри тэга с классом/
+.title .bage /класс внутри тэга с классом/
+[name=vlad] /когда атрибут name имеет знаечние "vlad"/
+input[disabled] /когда в input есть атрибут disabled/
+* /всё/
+body > p /касаеться прямых наследников body/

@@ -1,0 +1,14 @@
+form
+input
+	checkbox
+	file
+	datetime
+	datetime-local
+	disabled
+	placeholder
+	number
+	readonly
+	required
+button
+label
+reset

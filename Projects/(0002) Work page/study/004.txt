@@ -1,0 +1,29 @@
+Назначаем display: flex или inline-flex (делает блок по содержимому) и начинаем ставить свойства 
+
+flex-direction (направление в главной оси)
+	row
+	row-reverse
+	column (по умолчанию)
+	column-reverse
+justify-content (рапределения пространства вдоль главной оси)
+	flex-start
+	flex-end
+	center
+	normal (стандарт)
+	space-between
+	space-around
+	space-evenly
+align-content (рапределения пространства вдоль второстепенной оси)
+align-items (контроль выравнивания вдоль второстепенной оси)
+	normal (standart)
+	flex-start
+	flex-end
+	center
+	baseline
+	stretch
+
+:nth-child(3)  (обращение к третему ребёнку (перед ":" ставиться класс)
+
+
+
+
