@@ -7,16 +7,25 @@
 <style>
     /*CSS of file*/
 
-    * {
+    .arial {
         font-family: Arial;
     }
 
-    ol, ul {
+    ol, ul, li {
         list-style: none;
+        margin-left: -25px;
     }
 
     .flex {
         display: flex;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
     }
 
     .format-1 {
@@ -33,6 +42,11 @@
         margin-right: 10px;
     }
 
+    .format-4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     .color-1 {
         background: rgb(240, 255, 255);;
     }
@@ -45,25 +59,29 @@
         padding: 3px;
     }
 
-    .margin-top_left-10 {
+    .margin-top_bottom-10 {
         margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .margin-bottom-10 {
         margin-bottom: 10px;
     }
 
 </style>
 <body class="color-1">
-<h2 class="format-1"><u>Добавление новых стилей текста, штриховки, типов линий</u></h2>
-<main class="format-1">
+<h2 class="format-1 arial"><u>Добавление новых стилей текста, штриховки, типов линий в AutoCAD</u></h2>
+<main class="format-1 arial">
     <ul>
-        <li>- скачиваем ниже, что нужно (zip архив в котором собраны нужны файлы и папки):
-            <div class="margin-top_left-10">
-            <b class="format-2"><a href="https://www.dropbox.com/sh/qf8kv2ub2zrl51p/AABg3vtOcXzekY832EffWvzXa?dl=1"
-                                   target="_blank">шрифты</a></b>
-            <b class="format-2"><a href="https://www.dropbox.com/sh/x9iqrvgiscu3x3w/AAAdUoNcP8XHwWJSY_1zGXJCa?dl=1"
-                                   target="_blank">штриховки</a></b>
-            <b class="format-2"><a href="https://www.dropbox.com/sh/ppb5ibi3y5070qz/AACcoljbgfFW6wKFzcMB34tla?dl=1"
-                                   target="_blank">стили
-                линий</a></b>
+        <li>- скачиваем ниже, что нужно (zip архив в котором собраны нужны файлы и папки):<br>
+            <div class="margin-top_bottom-10">
+                <b class="format-2"><a href="https://www.dropbox.com/sh/qf8kv2ub2zrl51p/AABg3vtOcXzekY832EffWvzXa?dl=1"
+                                       target="_blank">шрифты</a></b>
+                <b class="format-2"><a href="https://www.dropbox.com/sh/x9iqrvgiscu3x3w/AAAdUoNcP8XHwWJSY_1zGXJCa?dl=1"
+                                       target="_blank">штриховки</a></b>
+                <b class="format-2"><a href="https://www.dropbox.com/sh/ppb5ibi3y5070qz/AACcoljbgfFW6wKFzcMB34tla?dl=1"
+                                       target="_blank">стили
+                    линий</a></b>
             </div>
         </li>
         <li>- создаём на компьютере отдельную папку для каждого компонента (стилей текста, штриховки, типов линий)
@@ -72,28 +90,48 @@
         <li>- копируем в буфер обмена путь к содержимому нужной папки (стилей текста, штриховки, типов линий)
         </li>
         <li>- влючаем AutoCAD</li>
-        <li>- создаём новый файл<span class="color-3"><b style="color: red">A</b> &rArr; Создать</span><br>
-            <img class="format-2 margin-top_left-10" src="https://www.dropbox.com/s/ti7yu4t0jojej0c/0008.png?dl=0&raw=1"
+        <li>- создаём новый файл
+            <div class="inline-block color-3">
+                <b style="color: red">A</b> &rArr; Создать
+            </div>
+            <br>
+            <img class="format-2 margin-top_bottom-10"
+                 src="https://www.dropbox.com/s/ti7yu4t0jojej0c/0008.png?dl=0&raw=1"
                  width="76px"
-                 border="1px"></li>
+                 border="1px">
+        </li>
         <li>- открываем вкладку в настройках, где указываеться путь доступа к новым компонентам
-            <span class="color-3"><b style="color: red">A</b> &rArr; Параметры &rArr;
+            <div class="inline-block color-3">
+                <b style="color: red">A</b> &rArr; Параметры &rArr;
                 <i style="color: rgb(102, 102, 102)">вкладка</i>
                 Файлы &rArr;
                 <i style="color: rgb(102, 102, 102)">нажать на "+" возле</i>
-                 Путь доступа к вспомогательным файлам
-            </span><br>
-            <div class="margin-top_left-10 flex">
-                <img class="format-2" src="https://www.dropbox.com/s/6mkeawd7d28tjm1/0007.png?dl=0&raw=1" width="252px" height="377"
+                Путь доступа к вспомогательным файлам
+                <br>
+            </div>
+            <br>
+            <div class="flex flex-wrap format-2 format-4">
+                <img src="https://www.dropbox.com/s/6mkeawd7d28tjm1/0007.png?dl=0&raw=1" width="252px" height="377"
                      border="1px">
                 <div class="format-3">&rArr;</div>
-                <img class="format-2" src="https://www.dropbox.com/s/wdcoup0e6u6kytx/0009.png?dl=0&raw=1" width="573px" height="339px" border="1px">
+                <img src="https://www.dropbox.com/s/wdcoup0e6u6kytx/0009.png?dl=0&raw=1" width="573px" height="339px"
+                     border="1px">
             </div>
         </li>
-        <li>- устанавливаем путь к новому компоненту <span class="color-3"><i style="color: rgb(102, 102, 102)">нажимаем</i> Добавить &rArr; <i style="color: rgb(102, 102, 102)">в появившееся поле (см. внизу окна)</i> вставляем содержимое буфера обмена &rArr; <i style="color: rgb(102, 102, 102)">нажимаем</i> Применить</span><br>
-            <img class="margin-top_left-10" src="https://www.dropbox.com/s/4dy11uhlsnondyc/0010.png?dl=0&raw=1" width="573px" height="340px" border="1px">
+        <li>- устанавливаем путь к новому компоненту
+            <div class="inline-block color-3">
+                <i style="color: rgb(102, 102, 102)">нажимаем</i> Добавить &rArr; <i style="color: rgb(102, 102, 102)">в
+                появившееся поле (см. внизу окна)</i> вставляем содержимое буфера обмена &rArr; <i
+                    style="color: rgb(102, 102, 102)">нажимаем</i> Применить
+            </div>
+            <br>
+            <img class="format-2 margin-top_bottom-10"
+                 src="https://www.dropbox.com/s/4dy11uhlsnondyc/0010.png?dl=0&raw=1" width="573px" height="340px"
+                 border="1px">
         </li>
-        <li>- после добавления всех нужных компонентов нажимаем кнопку<span class="color-3">ОК</span><i> </i>после чего окно закроеться</li>
+        <li>- после добавления всех нужных компонентов нажимаем кнопку<span class="color-3">ОК</span><i> </i>после чего
+            окно закроеться
+        </li>
 
     </ul>
 </main>
